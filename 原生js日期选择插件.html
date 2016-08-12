@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>时间选择控件</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        input {
+            box-shadow: 0 0 1px 1px #007AFF;
+            border: none;
+            border-radius: 10px;
+            background: #FFFFFF;
+        }
+        .nav {
+            height: 50px;
+            color: #FFFFFF;
+            text-align: center;
+            background: #0894EC;
+        }
+        .content{
+            margin-top: 1rem;
+            text-align: center;
+            line-height: 2rem;
+        }
+        .kj-date{
+            height: 52px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    日期选择：
+    <select class="kj-date" id="datequick" onchange="datequick()">
+        <option value="0">日期</option>
+        <option value="1">昨天</option>
+        <option value="2">今天</option>
+        <option value="3">上周</option>
+        <option value="4">本周</option>
+        <option value="5">上月</option>
+        <option value="6">本月</option>
+        <option value="7">本年</option>
+    </select>
+</nav>
+<div class="content">
+    开始日期：
+    <input type="date" id="rq1" value="2016-01-01" /><br />
+    结束日期：
+    <input type="date" id="rq2" value="2016-01-01" />
+</div>
+</body>
+<script src="js/timeChoose.js"></script>
+</html>
