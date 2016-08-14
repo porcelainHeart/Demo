@@ -113,6 +113,7 @@ setInterval(function() {
     }
 
 }, 200);
+// 监听按键事件
 document.onkeydown = function(e) {
     var ev = e || window.event;
     switch(ev.keyCode) {
